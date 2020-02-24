@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">MCQMax</string>
+    <string name="category">Category</string>
+    <string name="restart">Restart</string>
+    <string name="resume">Resume</string>
+    <string name="history">History</string>
+    <string name="start">Start</string>
+</resources>
