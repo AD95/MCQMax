@@ -2,9 +2,11 @@ package com.example.mcqmax.test;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Build;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.FragmentTransaction;
@@ -12,6 +14,7 @@ import androidx.fragment.app.FragmentTransaction;
 import com.example.mcqmax.R;
 import com.example.mcqmax.database.databaseHelper;
 import com.example.mcqmax.utils.Common;
+import com.google.android.material.snackbar.Snackbar;
 
 import java.io.Serializable;
 import java.util.ArrayList;
@@ -28,6 +31,7 @@ public class TestStart extends AppCompatActivity {
     ArrayList<String> serial;               //Question ids
     String category;
     TestStartFragment test;
+    Snackbar snackbar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -74,6 +78,10 @@ public class TestStart extends AppCompatActivity {
 
     void putFragment() {
 
+        if(snackbar != null) {
+            snackbar.dismiss();
+        }
+
         if (progress_no == serial.size()) {
             Intent intent = new Intent(TestStart.this, Results.class);
             intent.putExtra(Common.category, category);
@@ -109,6 +117,15 @@ public class TestStart extends AppCompatActivity {
         if (choice_selected.equals(Objects.requireNonNull(mcq.get(progress)).get(0))) {
             score++;
             Common.setSharedPreferences(category + Common.score, String.valueOf(score));
+            snackbar = Snackbar
+                    .make(findViewById(R.id.snackbar), "That's the right answer!", Snackbar.LENGTH_SHORT);
+            snackbar.getView().setBackgroundColor(getResources().getColor(R.color.colorPrimaryDark));
+            snackbar.show();
+        } else {
+            snackbar = Snackbar
+                    .make(findViewById(R.id.snackbar), "Sorry, that's the wrong answer", Snackbar.LENGTH_SHORT);
+            snackbar.getView().setBackgroundColor(getResources().getColor(R.color.red));
+            snackbar.show();
         }
 
         if (progress_no == serial.size()) {
