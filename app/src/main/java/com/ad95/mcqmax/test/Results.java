@@ -1,4 +1,4 @@
-package com.example.mcqmax.test;
+package com.ad95.mcqmax.test;
 
 import android.os.Build;
 import android.os.Bundle;
@@ -7,8 +7,8 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.mcqmax.R;
-import com.example.mcqmax.utils.Common;
+import com.ad95.mcqmax.R;
+import com.ad95.mcqmax.utils.Common;
 
 import java.util.ArrayList;
 import java.util.Objects;

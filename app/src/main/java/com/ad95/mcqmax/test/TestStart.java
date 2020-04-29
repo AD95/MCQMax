@@ -1,4 +1,4 @@
-package com.example.mcqmax.test;
+package com.ad95.mcqmax.test;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -11,9 +11,9 @@ import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.FragmentTransaction;
 
-import com.example.mcqmax.R;
-import com.example.mcqmax.database.databaseHelper;
-import com.example.mcqmax.utils.Common;
+import com.ad95.mcqmax.R;
+import com.ad95.mcqmax.database.databaseHelper;
+import com.ad95.mcqmax.utils.Common;
 import com.google.android.material.snackbar.Snackbar;
 
 import java.io.Serializable;

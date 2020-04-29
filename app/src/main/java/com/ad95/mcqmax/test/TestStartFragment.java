@@ -1,9 +1,8 @@
-package com.example.mcqmax.test;
+package com.ad95.mcqmax.test;
 
 import android.animation.ObjectAnimator;
 import android.os.Bundle;
 import android.text.Html;
-import android.text.method.ScrollingMovementMethod;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -17,11 +16,10 @@ import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.coordinatorlayout.widget.CoordinatorLayout;
 import androidx.fragment.app.Fragment;
 
-import com.example.mcqmax.R;
-import com.example.mcqmax.utils.Common;
+import com.ad95.mcqmax.R;
+import com.ad95.mcqmax.utils.Common;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 import java.util.ArrayList;

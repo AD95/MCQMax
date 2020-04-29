@@ -1,4 +1,4 @@
-package com.example.mcqmax;
+package com.ad95.mcqmax;
 
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -13,10 +13,10 @@ import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
 
-import com.example.mcqmax.database.databaseHelper;
-import com.example.mcqmax.test.Results;
-import com.example.mcqmax.test.TestStart;
-import com.example.mcqmax.utils.Common;
+import com.ad95.mcqmax.database.databaseHelper;
+import com.ad95.mcqmax.test.Results;
+import com.ad95.mcqmax.test.TestStart;
+import com.ad95.mcqmax.utils.Common;
 
 import java.util.ArrayList;
 import java.util.HashMap;

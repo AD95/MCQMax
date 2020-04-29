@@ -1,4 +1,4 @@
-package com.example.mcqmax.database;
+package com.ad95.mcqmax.database;
 
 import android.content.ContentValues;
 import android.content.Context;
@@ -6,7 +6,7 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
-import com.example.mcqmax.utils.Common;
+import com.ad95.mcqmax.utils.Common;
 
 import java.util.ArrayList;
 import java.util.HashMap;

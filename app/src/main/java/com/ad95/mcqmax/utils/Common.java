@@ -1,4 +1,4 @@
-package com.example.mcqmax.utils;
+package com.ad95.mcqmax.utils;
 
 import android.app.Activity;
 import android.app.ProgressDialog;
@@ -18,8 +18,8 @@ import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
-import com.example.mcqmax.Splash;
-import com.example.mcqmax.database.databaseHelper;
+import com.ad95.mcqmax.Splash;
+import com.ad95.mcqmax.database.databaseHelper;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -29,7 +29,7 @@ import java.util.HashMap;
 import java.util.Objects;
 
 public class Common {
-    private static String Url = "http://lsatmaxadmin.us/interview/loadData.php";
+    private static String Url = "https://raw.githubusercontent.com/AD95/MCQMax/master/loadData.php";
 
     private static Context ctx;
     private static databaseHelper databaseHelper;
@@ -91,7 +91,7 @@ public class Common {
 
         final JSONArray[] obj = {null};
 
-        databaseHelper = com.example.mcqmax.database.databaseHelper.getInstance(ctx);
+        databaseHelper = com.ad95.mcqmax.database.databaseHelper.getInstance(ctx);
 
         final Thread myThread = new Thread() {
             @Override

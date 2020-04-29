@@ -1,4 +1,4 @@
-package com.example.mcqmax;
+package com.ad95.mcqmax;
 
 import org.junit.Test;
 
